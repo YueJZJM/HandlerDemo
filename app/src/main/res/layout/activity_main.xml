@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/post_button"
+            android:text="post更新"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            />
+
+        <TextView
+            android:id="@+id/post_text"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="abc"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/postDelayed_button"
+            android:text="postDelayed更新"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            />
+
+        <TextView
+            android:id="@+id/postDelayed_text"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="abc"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/handleMessage_button"
+            android:text="handleMessage更新"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            />
+
+        <TextView
+            android:id="@+id/handleMessage_text"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="abc"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/handleCallback_button"
+            android:text="handleCallback更新"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
