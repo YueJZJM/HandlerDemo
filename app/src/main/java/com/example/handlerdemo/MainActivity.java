@@ -1,5 +1,6 @@
 package com.example.handlerdemo;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButtonHandleMessage;
     private TextView mTextHandleMessage;
     private Button mButtonHandlerCallback;
+    private Button SecondButton;
+    private Button ThreadButton;
 
     private MyRunnable myRunnable = new MyRunnable();
 
@@ -59,8 +62,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTextViewPost = findViewById(R.id.post_text);
         mButtonPostDelayed = findViewById(R.id.postDelayed_button);
         mTextViewPostDelayed = findViewById(R.id.postDelayed_text);
+        SecondButton = findViewById(R.id.thread_button);
+        ThreadButton = findViewById(R.id.HandlerThread_button);
         mButtonPostDelayed.setOnClickListener(this);
         mButtonPost.setOnClickListener(this);
+        SecondButton.setOnClickListener(this);
+        ThreadButton.setOnClickListener(this);
 
         mTextViewPostDelayed.setOnClickListener(this);
         mButtonHandleMessage = findViewById(R.id.handleMessage_button);
@@ -90,6 +97,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.handleCallback_button:
                 handlerCallback.sendEmptyMessage(1);
+                break;
+            case R.id.thread_button:
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.HandlerThread_button:
+                Intent intent1 = new Intent(MainActivity.this, ThreadActivity.class);
+                startActivity(intent1);
                 break;
             default:
                 break;

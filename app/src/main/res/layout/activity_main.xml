@@ -18,6 +18,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="45dp"
+            android:textAllCaps="false"
             />
 
         <TextView
@@ -41,6 +42,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="45dp"
+            android:textAllCaps="false"
             />
 
         <TextView
@@ -64,6 +66,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="45dp"
+            android:textAllCaps="false"
             />
 
         <TextView
@@ -86,6 +89,37 @@
             android:text="handleCallback更新"
             android:layout_weight="1"
             android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/thread_button"
+            android:text="自定义与线程相关的Handler"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="45dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/HandlerThread_button"
+            android:text="HandlerThread"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
             android:layout_height="45dp"
             />
     </LinearLayout>
