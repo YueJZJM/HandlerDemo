@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButtonHandlerCallback;
     private Button SecondButton;
     private Button ThreadButton;
+    private Button FourButton;
 
     private MyRunnable myRunnable = new MyRunnable();
 
@@ -64,10 +65,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTextViewPostDelayed = findViewById(R.id.postDelayed_text);
         SecondButton = findViewById(R.id.thread_button);
         ThreadButton = findViewById(R.id.HandlerThread_button);
+        FourButton = findViewById(R.id.four_button);
         mButtonPostDelayed.setOnClickListener(this);
         mButtonPost.setOnClickListener(this);
         SecondButton.setOnClickListener(this);
         ThreadButton.setOnClickListener(this);
+        FourButton.setOnClickListener(this);
 
         mTextViewPostDelayed.setOnClickListener(this);
         mButtonHandleMessage = findViewById(R.id.handleMessage_button);
@@ -105,6 +108,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.HandlerThread_button:
                 Intent intent1 = new Intent(MainActivity.this, ThreadActivity.class);
                 startActivity(intent1);
+                break;
+            case R.id.four_button:
+                Intent intent2 = new Intent(MainActivity.this, FourActivity.class);
+                startActivity(intent2);
                 break;
             default:
                 break;
